@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
       liked: false,
     },
     {
-      songName: "Hymn For The Weekend[Remix]",
+      songName: "Hymn For The Weekend",
       filePath: "assets/songs/Song4.mp3",
       coverPath: "assets/images/cover4.jpg",
       liked: false,

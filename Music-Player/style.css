@@ -304,7 +304,7 @@ body {
     position: absolute;
     inset: 0;
     background-size: cover;
-    background-position: top center;
+    background-position: center center;
     filter: blur(2px) brightness(0.75);
     transition: opacity 1s ease-in-out;
     opacity: 0;
@@ -421,7 +421,7 @@ body {
 }
 
 .cont-title {
-    font-family: "Sulphur Point", sans-serif;
+    font-family: "Faculty Glyphic", sans-serif;
     font-size: 2rem;
     margin: 0;
     color: white;
@@ -468,13 +468,10 @@ body {
 }
 
 .overlay-controls {
-    /* position: absolute; */
     inset: 0;
     display: flex;
     align-items: center;
-    /* vertical centering */
     justify-content: center;
-    /* horizontal centering */
     background: rgba(0, 0, 0, 0.4);
     border-radius: 8px;
     opacity: 0;
@@ -493,15 +490,15 @@ body {
 .playme,
 .pauseme {
     position: absolute;
-    width: 50px;
-    height: 50px;
-    /* margin: 50px; */
-    top: 55px;
-    left: 55px;
+    width: 40px;
+    height: 40px;
+    top: 60px;
+    left: 60px;
     cursor: pointer;
     transition: transform 0.2s ease;
     background: transparent;
     border: none;
+    filter: brightness(1.2);
 }
 
 .playme:hover,
@@ -548,9 +545,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    /* pushes .controls to bottom */
     height: 100%;
-    /* full height to allow space distribution */
     padding: 1rem;
     background-color: #1E1E2F;
     border: 2px solid #4F6DF5;
@@ -657,4 +652,10 @@ body {
 
 .play-button:hover {
     transform: scale(1.05);
+}
+
+
+.activeicon {
+    filter: invert(1);
+    transform: scale(1.2);
 }
